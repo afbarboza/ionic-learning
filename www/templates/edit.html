@@ -1,0 +1,18 @@
+<ion-view view-title="Edit Note">
+    <!--<ion-nav-title>Edit Note</ion-nav-title>-->
+    <ion-content ng-controller="EditCtrl">
+        <!--Please, note that noteId is a parameter passed between views-->
+        <!--This is the edit view for the note #{{noteId}} - {{note.title}}.-->
+
+        <div class="list card">
+            <div class="item item-input">
+                <input type="text" ng-model="note.title" />
+            </div>
+
+            <div class="item item-input">
+               <textarea rows="5"  ng-model="note.description"></textarea>
+            </div>
+
+        </div>
+    </ion-content>
+</ion-view>
