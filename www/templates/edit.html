@@ -1,6 +1,6 @@
 <ion-view view-title="Edit Note">
     <!--<ion-nav-title>Edit Note</ion-nav-title>-->
-    <ion-content ng-controller="EditCtrl">
+    <ion-content>
         <!--Please, note that noteId is a parameter passed between views-->
         <!--This is the edit view for the note #{{noteId}} - {{note.title}}.-->
 
@@ -12,7 +12,13 @@
             <div class="item item-input">
                <textarea rows="5"  ng-model="note.description"></textarea>
             </div>
-
         </div>
+
+        <div class="padding">
+            <button class="button button-block button-positive" ng-click="save()">
+                Save
+             </button>
+        </div>
+
     </ion-content>
 </ion-view>
